@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.myquotes.Presentation.NavControl.AppNavController
 import com.example.myquotes.Presentation.Screen.HomeScreen.HomeScreen
 import com.example.myquotes.Presentation.Screen.detailScreen.DetailScreen
@@ -15,9 +16,13 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+      //  installSplashScreen()
         setContent {
             MyQuotesTheme {
                 AppNavController()
+
+
             }
         }
     }
