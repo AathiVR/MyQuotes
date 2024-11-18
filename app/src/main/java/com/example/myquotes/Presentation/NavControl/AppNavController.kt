@@ -13,6 +13,8 @@ import com.example.myquotes.Presentation.Screen.detailScreen.DetailScreen
 
 
 
+
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun AppNavController() {
 

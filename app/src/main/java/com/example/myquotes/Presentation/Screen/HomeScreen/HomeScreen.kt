@@ -23,6 +23,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
@@ -59,8 +60,8 @@ fun HomeScreen(
         topBar = {
             TopAppBar(
                 modifier = Modifier
-                    .clip(RoundedCornerShape(90.dp))
-                    .padding(top = 10.dp),
+                    .padding(top = 10.dp).alpha(0.8f),
+
 
                 title = {
                     Text(

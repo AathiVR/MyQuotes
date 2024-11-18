@@ -47,9 +47,10 @@ fun DetailScreen(
 
         ) {
             when(state){
-                is NetworkUIState.LOADING -> {
+               is NetworkUIState.LOADING -> {
                     AppProgressBar()
                 }
+
                 is NetworkUIState.SUCCESS -> {
                     DetailQuotes(data = state.data)
                 }
